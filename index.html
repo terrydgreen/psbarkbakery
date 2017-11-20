@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pawsitively Scrumptious Bark Bakery & Boutique</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.jumbotron { 
+    background: url('img/store-front-background.jpg') no-repeat #ff69b4;
+    font-family: "Times New Romain", Geneva, Ariel;
+    color: #ffffff;
+    padding: 50px 25px 15px 25px;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-pink {
+    background-color: 	#f5d1e4;
+}
+
+.bg-pink-boutique {
+    background-color: #f5d1e4;
+    color: #000;
+}
+
+.bg-doctor {
+    width: 100% vm;
+    background: url('img/doctor-visit-background.jpg') no-repeat #fff;
+}
+
+.logo-small {
+    color: #eeb2cc;
+    font-size: 50px;
+}
+
+.logo {
+    color: #ff69b4;
+    font-size: 200px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #ff69b4;
+}
+
+.carousel-indicators li {
+    border-color: #ff69b4;
+}
+
+.carousel-indicators li.active {
+    background-color: #ff69b4;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.green_header {
+    color: green;
+    font-weight: bold;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.panel {
+    border: 1px solid #ff69b4; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #ff69b4;
+    background-color: #fff !important;
+    color: #ff69b4;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #ff69b4 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ff69b4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ff69b4 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;    
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .jumbotron { 
+        background: #ff69b4;
+        font-family: "Times New Romain", Geneva, Ariel;
+        color: #ffffff;
+        padding: 100px 25px;
+    }
+
+    .bg-pink-boutique {
+        background: #f5d1e4;
+        color: #000;
+    }
+
+    .bg-doctor {
+        background: #fff;
+    }
+
+}
+</style>
+
+</head>
+<body>
+<a name="#top"></a>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#boutique">BOUTIQUE</a></li>
+        <li><a href="#bakery">BAKERY</a></li>
+        <li><a href="#furniture">FURNITURE</a></li>
+        <li><a href="#wellness">WELLNESS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a name="about"></a>
+<div class="jumbotron text-center">
+  <img src="img/logo_hm.png" style="max-width:100%;height:auto;" /><br/>
+  <h4>198 N. Main Street in Crestview, FL &bull; (850) 398-8433</h4>
+
+<!--
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+-->
+
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <img src="img/april.jpg" class="img-responsive img-circle" style="display:inline" alt="April Meier, Owner" width="250" height="250">
+      <h4>April Meier, Owner</h4>
+    </div>
+    <div class="col-sm-4">
+      <h2>About Us</h2>
+      <h4><strong>MISSION:</strong> Deep down we know that most pet owners care for their fur babies as if they were their own child.  Therefore, our mission is to help educate pet owners so they can do what's best for their pet.</h4> 
+      <h4><strong>VISION:</strong> Our vision is see all pets live a long & healthy life.</h4>
+    </div>
+    <div class="col-sm-4">	
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	    <li data-target="#myCarousel" data-slide-to="4"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	    	<img src="img/shop-03.jpg" class="img-responsive img-rectangle" style="display:inline" alt="Store Front" width="400" height="300">      
+	    </div>
+	    <div class="item">
+	      	<img src="img/shop-04.jpg" class="img-responsive img-rectangle" style="display:inline" alt="Store Front" width="400" height="300">
+	    </div>
+	    <div class="item">
+	        <img src="img/shop-02.jpg" class="img-responsive img-rectangle" style="display:inline" alt="Store Front" width="400" height="300">
+	    </div>
+	    <div class="item">
+	        <img src="img/shop-06.jpg" class="img-responsive img-rectangle" style="display:inline" alt="Employee & Customer" width="400" height="300">
+	    </div>
+	    <div class="item">
+	        <img src="img/shop-07.jpg" class="img-responsive img-rectangle" style="display:inline" alt="Customer Appreciation" width="400" height="300">
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+    </div>
+  </div>
+</div>
+
+<a name="boutique"></a>
+<div class="container-fluid text-center bg-pink-boutique">
+  <h2>Boutique</h2>
+  <h4>Only the best for your sweetheart</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/pic02-small.jpg" alt="Dog Leases">
+        <p><strong>Outfits w/ Matching Collars</strong></p>
+        <p>Your pet should wear only the finest</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/pic22-small.jpg" alt="Feeding Bowls">
+        <p><strong>Uniforms</strong></p>
+        <p>Give your pooch a badge!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/pic23-small.jpg" alt="More Leases">
+        <p><strong>Scarfs</strong></p>
+        <p>Strong & durable just like your pet</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+     <div class="item active">
+     <h4>"April took a lot of time explaining what works well for puppies and how to feed them right."<br><span style="font-style:normal;">Cheryl Nolan, Facebook</span></h4>
+     </div>
+     <div class="item">
+       <h4>"An extremely helpful woman let me take several different kinds of treats to try out with my picky pet."<br><span style="font-style:normal;">Tracy Ann Wilson, Facebook</span></h4>
+     </div>
+     <div class="item">
+       <h4>"They are knowledgeable of their products and take the time to educate customers. A big thank you from Charlie."<br><span style="font-style:normal;">Joanna Traylor, Facebook</span></h4>
+     </div>
+   </div>
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+</div>
+
+<a name="bakery"></a>
+<div class="container-fluid text-center">
+  <div class="text-center">
+    <h2>Bakery</h2>
+    <h4>We can help you choose the best for your pet!</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Kitty Meals</h1>
+        </div>
+        <div class="panel-body">
+          <img src="img/pic19-small.jpg" style="max-width:100%;height:auto;" />
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <button class="btn btn-lg">Buy Now</button>
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Meat & Cheese</h1>
+        </div>
+        <div class="panel-body">
+          <img src="img/pic20-small.jpg" style="max-width:100%;height:auto;" />
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <button class="btn btn-lg">Buy Now</button>
+        </div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>For Large Breeds</h1>
+        </div>
+        <div class="panel-body">
+          <img src="img/pic24-small.jpg" style="max-width:100%;height:auto;" />
+        </div>
+        <div class="panel-footer">
+          <h3>$39</h3>
+          <button class="btn btn-lg">Buy Now</button>
+        </div>
+      </div> 
+    </div> 
+  </div>
+
+  <center><button class="btn btn-lg">Visit Our Store...</button></center>
+
+</div>
+
+<a name="furniture"></a>
+<div class="container-fluid text-center bg-pink">
+
+  <h2>Furniture</h2>
+  <h4>Nothing but the best for your kitty/pooch</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/shop-04.jpg" alt="Play Room">
+        <p><strong>Kitty Play Room</strong></p>
+        <p>Give them room to exercise in-doors</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/shop-05.jpg" alt="Car Rides">
+        <p><strong>Ride N Style</strong></p>
+        <p>Allow your pet to cruise in style</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/pic13-small.jpg" alt="Gift Basket">
+        <p><strong>Gift Baskets</strong></p>
+        <p>Use as a reward or to decorate the room</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<a name="wellness"></a>
+<div class="container-fluid text-center bg-doctor">
+  <h2>WELLNESS</h2>
+  <img src="img/spotted-dog-01-small.png" style="max-width:100%;height:auto;" />
+  <h4 class="green_header"><em>Feeling a little green?</em></h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>EAR INFECTIONS</h4>
+      <p>We carry "Pet Releaf 300 Hemp Oil" which works great..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>URINARY TRACT INFECTIONS</h4>
+      <p>We carry a new line of cat food which helps..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>MILK FOR NEWBORNS</h4>
+      <p>Select the RIGHT replacement milk for newborns..</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>EXERCISE FURNITURE</h4>
+      <p>We carry cat furniture to help with indoors exercise..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>CERTIFIED</h4>
+      <p>Our employees are licensed pet care-takers..</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>LOVE YOUR PET</h4>
+      <p>And your pet will love you in return..</p>
+    </div>
+  </div>
+</div>
+
+<a name="contact"></a>
+<div class="container-fluid bg-pink">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>198 N. Main Street in Crestview, FL</p>
+      <p><span class="glyphicon glyphicon-phone"></span> (850) 398-8433</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> pawsitivelyscrumptious@yahoo.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.577843958496!2d-86.57227068469116!3d30.758357591447947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8891735803edee2f%3A0x5956536b25a68999!2s198+Main+St%2C+Crestview%2C+FL+32536!5e0!3m2!1sen!2sus!4v1511007855798" width="100% vm" height="400" frameborder="1" style="border:1" allowfullscreen></iframe>
+
+<footer class="container-fluid text-center">
+  <a href="#top" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Website Designed by T.Green</p> 
+</footer>
+
+</body>
+</html>
